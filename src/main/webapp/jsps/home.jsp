@@ -82,14 +82,14 @@
         <img src="../images/ladies.jpg">
         <h3>Ladies Wear</h3>
         <p>Sarees, Kurtis, Dresses</p>
-        <a href="ladies.jsp">View Collection</a>
+        <a href="${pageContext.request.contextPath}/jsps/ladies.jsp">Ladies</a>
     </div>
 
     <div class="box">
         <img src="../images/gents.jpg">
         <h3>Gents Wear</h3>
         <p>Shirts, Jeans, T-Shirts</p>
-        <a href="gents.jsp">View Collection</a>
+        <a href="${pageContext.request.contextPath}/jsps/gents.jsp">Gents</a>
     </div>
 </div>
 
