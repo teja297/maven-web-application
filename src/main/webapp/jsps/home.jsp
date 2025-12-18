@@ -1,54 +1,103 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ page import="java.net.*" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>MithunTechnologies- Home Page</title>
-<link href="images/mithunlogo.jpg" rel="icon">
-</head>
-</head>
-<body>
-<h1 align="center">Welcome to Mithun Technologies Private Ltd. Ph No: +91-9980923226, +91-9980923216 ,+91-9900012028,Bengaluru,Karnataka,India</h1>
-<h1 align="center"> Mithun Technologies- Very Good Training center for DevOps with AWS,Python & AWS Solution Architect & Terraform in Bangalore India.Teaching Real Time scnerios</h1>
-<hr>
-<br>
-	<h1><h3> Server Side IP Address </h3><br>
+<meta charset="UTF-8">
+<title>Dushyanth Fashion World - Home</title>
 
-<% 
-String ip = "";
-InetAddress inetAddress = InetAddress.getLocalHost();
-ip = inetAddress.getHostAddress();
-out.println("Server Host Name :: "+inetAddress.getHostName()); 
-%>
-<br>
-<%out.println("Server IP Address :: "+ip);%>
-</h1>
-<br>
-<h1><h3> Client Side IP Address </h3><br>
-<%out.print( "Client IP Address :: " + request.getRemoteAddr() ); %><br>
-<%out.print( "Client Name Host :: "+ request.getRemoteHost() );%><br></h1>
-<hr>
-<div style="text-align: center;">
-	<span>
-		<img src="images/mithunlogo.jpg" alt="" width="100">
-	</span>
-	<span style="font-weight: bold;">
-		Mithun Technologies, 
-		Martha Halli, Above ICICI Bank, Beside Meghana Foods,
-		Bangalore,
-		+91-9980923226,+91-9900012028
-		devopstrainingblr@gmail.com
-		<br>
-		<a href="mailto:devopstrainingblr@gmail.com">Mail to Mithun Technologies</a>
-	</span>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f5f5f5;
+    }
+    header {
+        background: #111;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    nav {
+        background: #444;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav a:hover {
+        color: orange;
+    }
+    .container {
+        padding: 30px;
+        text-align: center;
+    }
+    .box {
+        display: inline-block;
+        width: 250px;
+        background: white;
+        margin: 15px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ccc;
+    }
+    .box img {
+        width: 100%;
+        height: 200px;
+    }
+    footer {
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Fashion World</h1>
+    <p>Ladies & Gents Clothing Store</p>
+</header>
+
+<nav>
+    <a href="home.jsp">Home</a>
+    <a href="ladies.jsp">Ladies</a>
+    <a href="gents.jsp">Gents</a>
+    <a href="contact.jsp">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Welcome to Fashion World</h2>
+    <p>Latest fashion at best prices</p>
+
+    <div class="box">
+        <img src="../images/ladies.jpg">
+        <h3>Ladies Wear</h3>
+        <p>Sarees, Kurtis, Dresses</p>
+        <a href="ladies.jsp">View Collection</a>
+    </div>
+
+    <div class="box">
+        <img src="../images/gents.jpg">
+        <h3>Gents Wear</h3>
+        <p>Shirts, Jeans, T-Shirts</p>
+        <a href="gents.jsp">View Collection</a>
+    </div>
 </div>
-<hr>
-	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
-<hr>
-<hr>
-<p align=center>Mithun Technologies - Consultant, Training, Development Center.</p>
-<p align=center><small>Copyrights 2022 by <a href="http://mithuntechnologies.com/">Mithun Technologies,Bengaluru</a> </small></p>
+
+<footer>
+    <p>📍 Palwancha, Kothagudem, India 509126</p>
+    <p>📞 +91-7386598719</p>
+    <p>© 2025 Dushyanth Fashion World</p>
+</footer>
 
 </body>
 </html>
