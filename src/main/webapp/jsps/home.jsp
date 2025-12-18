@@ -63,7 +63,7 @@
 <body>
 
 <header>
-    <h1>Fashion World</h1>
+    <h1>Dushyanth Fashion World</h1>
     <p>Ladies & Gents Clothing Store</p>
 </header>
 
@@ -75,7 +75,7 @@
 </nav>
 
 <div class="container">
-    <h2>Welcome to Fashion World</h2>
+    <h2>Welcome to Dushyanth Fashion World</h2>
     <p>Latest fashion at best prices</p>
 
     <div class="box">
